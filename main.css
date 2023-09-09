@@ -1,0 +1,29 @@
+/* Dalton Verwolf*/
+h1
+{
+    text-align: center;
+}
+nav
+{
+    height: 6000px;
+    width: 200px;
+    float: left;
+    padding: 5px;
+    line-height: 30px;
+
+}
+body
+{
+  background-color: darkgrey;
+  color: black;
+}
+
+#memeImage
+{
+    margin-right: 200px;
+}
+footer
+{
+    text-align: right;
+    margin-right: 200px;
+}
