@@ -16,13 +16,13 @@ function funcAlert()
 
     //alert("First num = " + die1 + "  Second num " + die2);
 
-   if (sum ==7)(sum==15) 
+   if (sum ==7)||(sum==15); 
    {
      alert ("CRAPS - you lose!");
    }
-   else if (die1==die2)(die1 % 2 = 0)
+   else if (die1==die2)&&(die1 % 2 = 0);
    {
-    alert (You won!);
+    alert ("You won!");
    }
    else
    {
