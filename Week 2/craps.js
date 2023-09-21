@@ -13,13 +13,13 @@ function funcAlert()
 
     document.getElementById("die1").innerHTML = "die1 = " + randNum1;
     document.getElementById("die2").innerHTML = "die2 = " + randNum2;
-
-    //alert("First num = " + die1 + "  Second num " + die2);
-
+    
+/*This line sets the condition that if the sum of die1 and die2 is 7 or 15 to output the message shown */
    if (sum ==7)||(sum==15); 
    {
      alert ("CRAPS - you lose!");
    }
+   /*This line is a continuation of our if statement and sets another condition with a different outcome */
    else if (die1==die2)&&(die1 % 2 = 0);
    {
     alert ("You won!");
