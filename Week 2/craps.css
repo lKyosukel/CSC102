@@ -1,0 +1,33 @@
+/* Dalton Verwolf*/
+h1
+{
+    text-align: center;
+}
+nav
+{
+    height: 6000px;
+    width: 200px;
+    float: left;
+    padding: 5px;
+    line-height: 30px;
+
+}
+body
+{
+  background-color: rgb(35, 152, 33);
+  color: black;
+  .rollDice {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: .5em 1em;
+    color: var(--clr-accent);
+    background-color: var(--clr-rgba);
+    border: 10px solid var(--clr-accent);
+    border-radius: 5px;
+  }
+}
+footer
+{
+    text-align: right;
+    margin-right: 200px;
+}
