@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Oswald', sans-serif;
-  text-shadow: 2px 2px #474747;
 }
 body{
   display: flex;
