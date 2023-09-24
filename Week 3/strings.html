@@ -20,5 +20,18 @@
       <p class="info-txt"></p>
     </div>
     <script src="script.js"></script><!--Call to javascript that runs the palindrome checker-->
+    <div class="container">
+      <h1 class="label">Fill Out for a Surprise!</h1>
+      <form class="login_form" action="message.html" method="post" name="form" onsubmit="return validated()">
+        <div class="font">First and Last Name</div>
+        <input autocomplete="off" type="text" name="firstLast">
+        <div id="firstLast_error">Please input name</div>
+        <div class="font font2">Zip</div>
+        <input type="password" name="zip">
+        <div id="zip_error">Please input zip</div>
+        <button type="submit">Login</button>
+      </form>
+    </div>	
+    <script src="valid.js"></script>
   </body>
 </html>
