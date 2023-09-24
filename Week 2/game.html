@@ -1,16 +1,28 @@
-<!--this is a comment-->
+<!--Dalton Verwolf-->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src = "craps.js"></script>
-    <title>CSC102 Functions</title>
+    <script src = "code.js"></script>
+    <link rel="stylesheet" href="craps.css">
+    <title>CSC102 Assn 2.1</title>
 </head>
 <body>
-    <div id = "sumTag"> sum goes here
-        <br>
-<button onclick="funcAlert()"> push me</button>
+  <div class="wrapper"><!--Creates a text box basically for the other elements of the program to clean
+  up the appearance-->
+    <header>
+      <h1>Game Time!</h1>
+      <h2>Rules</h2>
+    </header>
+    <p>You win if a 7 or 11 roll, or lose if 2, 3, or 12 roll (known as “craps”).
+      Any other number that rolls becomes the “point” and the point must roll again before a 7 to win.</p>
+      <button onclick="rollDice()">Roll Dice!</button><!--Calls to the rollDice function in the javascript-->
+      <div id = "result1">Die 1</div><!--Sets a placeholder for information from the javascript-->
+    <div id = "result2">Die 2</div>
+    <div id = "sumTag"></div>
+
+  </div>
 </body>
 </html>
