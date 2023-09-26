@@ -6,11 +6,12 @@
     var firstLast_error = document.getElementById('firstlast_error');
     var zip_error = document.getElementById('zip_error');
     
-    firstLast.addEventListener('textInput', firsztLast_Verify);
-    zip.addEventListener('textInput', zip_Verify);
+    firstLast.addEventListener('textInput', firstLast_Verify);//attaches an event handler to the specified element without interfering with other handlers, in this case a text entry
+    zip.addEventListener('textInput', zip_Verify);// same for this line, its waiting to see a text entry in the field.
+    //These are similar to the "onclick" modifiers for buttons.
     
     function validated(){/*Displays error message if name entered exceeds 20 characters*/
-        if (firstLast.value.length > 20) {
+        if ((firstLast.value.length) < 9 || (firstLast.value.length > 20)) {
             firstLast.style.border = "1px solid red";
             firstLast_error.style.display = "block";
             firstLast.focus();
@@ -38,5 +39,3 @@
             return true;
         }
     }
-    
-    
