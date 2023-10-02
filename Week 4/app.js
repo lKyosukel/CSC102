@@ -6,7 +6,7 @@ var display = 0;
 function startMove()
 {
     var i = 0;
-    var image = document.getElementById('rickroll')
+    var image = document.getElementById("rickroll")
     intervalID=setInterval(function()
     {
         image.style.left=change+"px";
