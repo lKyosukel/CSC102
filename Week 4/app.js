@@ -1,24 +1,31 @@
 var intervalID = 0;
 var change = 10;
 var display = 0;
-
+var backwards = 4
 
 function startMove()
 {
     var i = 0;
     var image = document.getElementById("rickroll")
-    intervalID=setInterval(function()
+    intervalId=setInterval(function()
     {
+        if (change > 500) {
+            backwards=-4;
+        }
+        else if (change < 10){
+            backwards=4;
+        }
         image.style.left=change+"px";
-        change+=4;
+        change+= backwards;
     },10);
     mysound=new sound("Rick Roll Sound Effect.mp3");
     mysound.play();
+    document.getElementById("updateX").innerHTML="x = " +image.style.left;
 }
 
 function stopMove()
 {
-    window.location.reload();
+    clearInterval(intervalId);
 }
 
 function start(){
@@ -49,4 +56,8 @@ function sound(src){
 
 function stopsound(){
     window.location.reload();
+}
+
+function intervalStop(){
+    clearInterval(intervalId);
 }
