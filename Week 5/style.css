@@ -3,7 +3,7 @@ body{
         background-repeat: no-repeat;
         background-size:cover;
     }
-ul {
+ul {/*Removes the padding and bullet marks on the list*/
   list-style-type: none;
   margin: 0;
   padding: 0;
