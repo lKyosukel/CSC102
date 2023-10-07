@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="active" href="index.html">Home</a>
+        <a href="index1.html">1.1 The Foundation</a>
+        <a href="game.html">2.1 My Game</a>
+        <a href="strings.html">3.1 Authorization</a>
+        <a href="index4.html">4.1 Audio</a>
+      </div>
+      
+      <button class="openbtn" onclick="openNav()">&#9776; Toggle Sidepanel</button>
+    <h1>Welcome to the show</h1>
+    <audio controls>
+        <source src="Rick Roll Sound Effect.mp3" type="audio/mpeg"></source>
+    </audio>
+    <br>
+    <button id="startButton" class="button" onclick="startMove()">Schmoove</button>
+    <button id="stopButton" class="button" onclick="stopMove()">Stop schmoove</button>
+    <br>
+    <img src="rickroll.gif" id="rickroll" style="position: absolute; left: 100; top: 100; width: 200px;"/>
+</body>
+</html>

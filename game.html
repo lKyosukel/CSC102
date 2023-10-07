@@ -1,0 +1,47 @@
+<!--Dalton Verwolf-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "code.js"></script>
+    <link rel="stylesheet" href="craps.css">
+    <title>CSC102 Assn 2.1</title>
+</head>
+<body>
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a class="active" href="#home">Home</a>
+    <a href="index1.html">1.1 The Foundation</a>
+    <a href="game.html">2.1 My Game</a>
+    <a href="strings.html">3.1 Authorization</a>
+    <a href="index4.html">4.1 Audio</a>
+  </div>
+  
+  <button class="openbtn" onclick="openNav()">&#9776; Toggle Sidepanel</button>
+  <div class="wrapper"><!--Creates a text box basically for the other elements of the program to clean
+  up the appearance-->
+    <header>
+      <h1>Game Time!</h1>
+      <h2>Rules</h2>
+    </header>
+    <p>You win if a 7 or 11 roll, or lose if 2, 3, or 12 roll (known as “craps”).
+      Any other number that rolls becomes the “point” and the point must roll again before a 7 to win.</p>
+      <button onclick="rollDice()">Roll Dice!</button><!--Calls to the rollDice function in the javascript-->
+      <div id = "result1">Die 1</div><!--Sets a placeholder for information from the javascript-->
+    <div id = "result2">Die 2</div>
+    <div id = "sumTag"></div>
+  </div>
+<footer>
+    Dalton Verwolf
+    <br>
+    University of Advancing Technology
+    <br>
+    2625 W Baseline Rd
+    <br>
+    Tempe, AZ 85283
+</footer>
+
+</body>
+</html>

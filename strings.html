@@ -1,0 +1,50 @@
+<!--Dalton Verwolf-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Palindrome Checker</title>
+    <link rel="stylesheet" href="style3.css">
+  </head>
+  <body>
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a class="active" href="index.html">Home</a>
+      <a href="index1.html">1.1 The Foundation</a>
+      <a href="game.html">2.1 My Game</a>
+      <a href="strings.html">3.1 Authorization</a>
+      <a href="index4.html">4.1 Audio</a>
+    </div>
+    
+    <button class="openbtn" onclick="openNav()">&#9776; Toggle Sidepanel</button>
+    <div class="wrapper"><!--Class for the creation of the container for the script-->
+      <header>
+        <h1>Palindrome Checker</h1>
+        <p>A palindrome is a word or phrase that reads the same backwards as forwards, e.g. level, refer.</p>
+      </header>
+      <div class="inputs"><!--Styling for text in the input box-->
+        <input type="text" spellcheck="false" placeholder="Enter text">
+        <button>Check Palindrome</button>
+      </div>
+      <p class="info-txt"></p>
+    </div>
+    <script src="script.js"></script><!--Call to javascript that runs the palindrome checker-->
+    
+    <br>
+
+    <div class="container">
+      <h1 class="label">Fill Out for a Surprise!</h1>
+      <form class="login_form" action="message.html" method="post" name="form" onsubmit="return validated()">
+        <div class="font">First and Last Name</div>
+        <input autocomplete="off" type="text" name="firstLast">
+        <div id="firstLast_error">Please input name</div>
+        <div class="font font2">Zip</div>
+        <input type="number" name="zip">
+        <div id="zip_error">Please input zip</div>
+        <button type="submit">Suprise</button>
+      </form>
+    </div>	
+    <script src="valid.js"></script>
+  </body>
+</html>
