@@ -8,7 +8,7 @@ ul {/*Removes the padding and bullet marks on the list*/
   margin: 0;
   padding: 0;
 }
-table, th, td{
+table, th, td{/*Sets the black background on the even cells and columns of the table to give it better readability*/
     border: 1.5px solid black;
     border-collapse: collapse;
     color: #f1f1f1;
@@ -32,7 +32,7 @@ footer {
    text-align: center;
 }
 
- .sidepanel {
+ .sidepanel {/*Appearance for the sidebar and related components, sets it to one position, makes the background black, and controls font size*/
     height: 250px;
     width: 0;
     position: fixed;
